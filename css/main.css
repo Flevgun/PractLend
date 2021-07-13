@@ -1,0 +1,13 @@
+.сontainer{
+    width: 1180px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+.email{
+    display: flex;
+}
