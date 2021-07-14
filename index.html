@@ -91,7 +91,7 @@
 	<div class="сontainer">
 		<h1>Добавьте ваше учебное заведение</h1>
 		<div class="email">
-			<p class="p-email">
+			<p class="email__p">
 				Введите ваш емаил:
 				<input type="email" name="email">
 				Введите код подтверждения:
@@ -131,11 +131,11 @@
 			</textarea>
 		</p>
 		<p>
-			Общежитие: <input type="checkbox"> <br>
-			Государственный: <input type="checkbox"> <br>
-			Бюджетные места: <input type="checkbox"><br>
-			Военная кафедра: <input type="checkbox"><br>
-			Лицензия: <input type="checkbox">
+			<label for="forhouse">Общежитие:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+			<label for="forGos">Государственный:</label><input type="checkbox" id="forGos" name="university" value="study"> <br>
+			<label for="forfree">Бюджетные места:</label><input type="checkbox" id="forfree" name="university" value="place"><br>
+			<label for="formilitary">Военная кафедра:</label><input type="checkbox" id="formilitary" name="university" value="militaryStudy"><br>
+			<label for="forlicense">Лицензия:</label><input type="checkbox" id="forlicense" name="university" value="licenseStudy">
 		</p>
 		<p>
 			Количество программ обучения:
@@ -189,12 +189,12 @@
 					<input type="text">
 				</p>
 				<p>
-					После 11кл: <input type="checkbox"> <br>
-					После 9 кл: <input type="checkbox"> <br>
-					Очно: <input type="checkbox"> <br>
-					Заочно: <input type="checkbox"> <br>
-					Дистанционно: <input type="checkbox"> <br>
-					Очно/заочно: <input type="checkbox"> <br>
+					 <label for="forhouse">После 11кл:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+					 <label for="forhouse">После 9 кл:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+					 <label for="forhouse">Очно:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+					 <label for="forhouse">Заочно:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+					 <label for="forhouse">Дистанционно:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
+					 <label for="forhouse">Очно/заочно:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
 				</p>
 				<p>ДОБАВИТЬ СТРАНИЦЫ С ПРОГРАММАМИ</p>
 				<p><input type="submit" value="Добавить"></p>
