@@ -1,241 +1,375 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-	<link rel="stylesheet" href="https://test.uralstudent.ru/css/bootstrap.css">
-	<link rel="stylesheet" href="https://test.uralstudent.ru/css/init.css">
-	<link rel="stylesheet" href="https://test.uralstudent.ru/css/jquery.bxslider.css">
-	<link rel="stylesheet" href="https://test.uralstudent.ru/css/jquery.fancybox.css">
-	<link rel="stylesheet" href="https://test.uralstudent.ru/css/style.css">
-    
-
-	<Script src="https://test.uralstudent.ru/js/bootstrap.min.js"></Script>
-	<Script src="https://test.uralstudent.ru/js/jquery.bxslider.js"></Script>
-	<Script src="https://test.uralstudent.ru/js/jquery.counterup.min.js"></Script>
-	<Script src="https://test.uralstudent.ru/js/jquery.fancybox.js"></Script>
-	<Script src="https://test.uralstudent.ru/js/jquery.maskedinput.js"></Script>
-	<Script src="https://test.uralstudent.ru/js/scripts.js"></Script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://test.uralstudent.ru/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="https://test.uralstudent.ru/css/init.css" />
+    <link
+      rel="stylesheet"
+      href="https://test.uralstudent.ru/css/jquery.bxslider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://test.uralstudent.ru/css/jquery.fancybox.css"
+    />
+    <link rel="stylesheet" href="https://test.uralstudent.ru/css/style.css" />
+  </head>
+  <body>
     <div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-2 col-4 pt10 pb10">
-				<a href="/ekb"><img src="https://test.uralstudent.ru/site_img/logo.png" class="img-fluid"></a>
-			</div>
-			<div class="col-3 fs16">
-				<a href="#city-popup" class="fancybox underline">Екатеринбург <i class="fas fa-angle-down"></i></a>
-			</div>
-			<div class="col-5 text-right d-md-none">
-				<a href="#" class="toggle-menu fs20"><i class="fas fa-bars"></i></a>
-			</div>
-			<div class="col-md-7">
-				<div class="d-flex">
-					<div class="menu ml-auto">
-						<ul>
-																<li class="has-submenu">
-									<a href="/ekb/uchebnye-zavedeniya/vuzy">Высшее</a>
-									<ul>
-										<li><a href="/ekb/uchebnye-zavedeniya/vuzy">Все ВУЗы</a></li>											
-												
-										<li><a href="/ekb/professii-vuzy">Профессии ВУЗов</a></li>
-										<li><a href="/ekb/specialnosti-vuzy">Специальности ВУЗов</a></li>
-										<li><a href="/ekb/programmy-vuzy">Программы ВУЗов</a></li>								
-									</ul>
-								</li>
-															
-																<li class="has-submenu">
-									<a href="/ekb/uchebnye-zavedeniya/ssuzy">Профессиональное</a>
-									<ul>
-										<li><a href="/ekb/uchebnye-zavedeniya/ssuzy">Все СПО</a></li>											
-												
-										<li><a href="/ekb/professii-ssuzy">Профессии СПО</a></li>
-										<li><a href="/ekb/specialnosti-ssuzy">Специальности СПО</a></li>
-										<li><a href="/ekb/programmy-ssuzy">Программы СПО</a></li>								
-									</ul>
-								</li>
-							
-							<li class="has-submenu">
-								<a href="#" onclick="return false;">Другое</a>
-								<ul>
-									<li><a href="/ekb/novosti">Новости</a></li>
-									<li><a href="/ekb/statii">Статьи</a></li>
-								</ul>
-							</li>
-							<li class="d-md-none">
-								<form method="post" action="/search">
-									<div class="d-flex">
-										<input placeholder="Найти..." type="text" value="" name="search" required="">
-										<button type="submit"><i class="fa fa-search"></i></button>
-									</div>
-								</form>
-							</li>
-						</ul>
-					</div>
-					<div class="d-none d-md-block"><a href="#" class="toggle-search" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="breads">
-		<div class="container fs11 text-uppercase">
-			<a href="/ekb">Главная</a> 
-								 &gt; <a href="/ekb/uchebnye-zavedeniya">Учебные заведения</a>
-								 &gt; <a href="/ekb/uchebnye-zavedeniya/vuzy">ВУЗы</a>
-								 &gt; <a href="/ekb/uchebnye-zavedeniya/vuzy/universitety">Университеты</a>
-								 &gt; <a href="/ekb/vuz/uralskij-federalnyj-universitet-imeni-pervogo-prezidenta-rossii-b-n-elcina">Уральский федеральный университет имени первого Президента России Б. Н. Ельцина</a>
-							&gt; Программы			</div>
-	</div>
-	<div class="сontainer">
-		<h1>Добавьте ваше учебное заведение</h1>
-		<div class="email">
-			<p class="email__p">
-				Введите ваш емаил:
-				<input type="email" name="email">
-				Введите код подтверждения:
-				<input type="text" name="kod">
-   				
-			</p> <br>
-		</div>
-		<p><input type="submit" value="Отправить код"></p>
-		<h3>
-			Выберите город:
-			<p>
-				<select>
-					<option value="1">Екат</option>
-					<option value="2">Тюмень</option>
-				</select>
-			</p>
-		</h3>
-		<h3>
-			Выберите категорию учебного заведения:
-			<p>
-				<select>
-					<option value="1">Высшее учебное заведение</option>
-					<option value="2">Среднее специальное учебное заведение</option>
-				</select>
-			</p>
-		</h3>
-		<h3>
-			Введите название учебного заведения:
-			<p>
-				<input type="text">
-			</p>
-		</h3>
-		<p>
-			Введите описание вашего учебного заведения: <br>
-			<textarea name="" id="" cols="30" rows="10">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-4 pt10 pb10">
+          <a href="/ekb"
+            ><img
+              src="https://test.uralstudent.ru/site_img/logo.png"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="col-3 fs16">
+          <a href="#city-popup" class="fancybox underline"
+            >Екатеринбург <i class="fas fa-angle-down"></i
+          ></a>
+        </div>
+        <div class="col-5 text-right d-md-none">
+          <a href="#" class="toggle-menu fs20"><i class="fas fa-bars"></i></a>
+        </div>
+        <div class="col-md-7">
+          <div class="d-flex">
+            <div class="menu ml-auto">
+              <ul>
+                <li class="has-submenu">
+                  <a href="/ekb/uchebnye-zavedeniya/vuzy">Высшее</a>
+                  <ul>
+                    <li>
+                      <a href="/ekb/uchebnye-zavedeniya/vuzy">Все ВУЗы</a>
+                    </li>
 
-			</textarea>
-		</p>
-		<p>
-			<label for="forhouse">Общежитие:</label><input type="checkbox" id="forhouse" name="university" value="room"> <br>
-			<label for="forGos">Государственный:</label><input type="checkbox" id="forGos" name="university" value="study"> <br>
-			<label for="forfree">Бюджетные места:</label><input type="checkbox" id="forfree" name="university" value="place"><br>
-			<label for="formilitary">Военная кафедра:</label><input type="checkbox" id="formilitary" name="university" value="militaryStudy"><br>
-			<label for="forlicense">Лицензия:</label><input type="checkbox" id="forlicense" name="university" value="licenseStudy">
-		</p>
-		<p>
-			Количество программ обучения:
-			<input type="text">
-		</p>
-		<p>
-			Количество бюджетных мест:
-			<input type="text">
-		</p>
-		<p>
-			Количество платных мест:
-			<input type="text">
-		</p>
-		<p>
-			Проходной балл на бюджет:
-			<input type="text">
-		</p>
-		<p>
-			Проходной балл на платное обучение:
-			<input type="text">
-		</p>
-		<p>
-			Средняя стоимость обучения в год:
-			<input type="text">
-		</p>
-		<div class="prog-study">
-			<form>
-				<fieldset>
-				  <legend>Программы обучения</legend>
-				  <p>
-					Наименование программы обучения:
-					<input type="text">
-				</p>
-				<p>Стоимость обучения в год:
-					<input type="text">
-				</p>
-				<p>
-					Проходной балл на бюджетной основе:
-					<input type="text">
-				</p>
-				<p>
-					Количество мест на бюджетной основе:
-					<input type="text">
-				</p>
-				<p>
-					Проходной балл на платной основе:
-					<input type="text">
-				</p>
-				<p>
-					Количество мест на платной основе:
-					<input type="text">
-				</p>
-				<p>
-					 <label for="eleven">После 11кл:</label><input type="checkbox" id="eleven" name="university" value="elevenclass"> <br>
-					 <label for="nine">После 9 кл:</label><input type="checkbox" id="nine" name="university" value="nineclass"> <br>
-					 <label for="ochno">Очно:</label><input type="checkbox" id="ochno" name="university" value="ochnostudy"> <br>
-					 <label for="zaochno">Заочно:</label><input type="checkbox" id="zaochno" name="university" value="zaochnostudy"> <br>
-					 <label for="distance">Дистанционно:</label><input type="checkbox" id="distance" name="university" value="distancestady"> <br>
-					 <label for="full">Очно/заочно:</label><input type="checkbox" id="full" name="university" value="fullstudy"> <br>
-				</p>
-				<p>ДОБАВИТЬ СТРАНИЦЫ С ПРОГРАММАМИ</p>
-				<p><input type="submit" value="Добавить"></p>
-	
-				</fieldset>
-				<p><input type="submit" value="Сохранить"></p>
-			  </form>
-		
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 pb20">
-					<p class="text-uppercase bold montserrat fs18 pb5">О нас</p>
-					<div class="fs13">
-						<p>Образовательный портал TimeStudent для абитуриентов и студентов. Каталог учебных заведений, профессий, программ обучения, дни открытых дверей, новости и статьи об образовании.</p>						</div>
-					<div class="social-footer">
-						<a href="#" target="_blank" class="mr10"><i class="fab fa-vk"></i></a>							<a href="#" target="_blank" class="mr10"><i class="fab fa-facebook-f"></i></a>							<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>						</div>
-				</div>
-									<div class="col-lg-4 col-md-6">
-					<p class="text-uppercase bold montserrat fs18">Меню</p>
-					<div class="fs13">
-						<ul class="bottom-menu list-unstyled">
-																<li><a href="/ekb/professii-vuzy">Профессии ВУЗов</a></li>
-								<li><a href="/ekb/specialnosti-vuzy">Специальности ВУЗов</a></li>
-								<li><a href="/ekb/programmy-vuzy">Программы обучения ВУЗов</a></li>	
-																								<li><a href="/ekb/professii-ssuzy">Профессии ССУЗов</a></li>
-								<li><a href="/ekb/specialnosti-ssuzy">Специальности ССУЗов</a></li>
-								<li><a href="/ekb/programmy-ssuzy">Программы обучения ССУЗов</a></li>
-														</ul>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<p class="text-uppercase bold montserrat fs18">Страницы</p>
-					<ul class="bottom-menu list-unstyled">	
-			<li><a href="/kontakty">Контакты</a></li>
-			<li><a href="/politic">Политика конфиденциальности</a></li>
-</ul>											</div>
-			</div>
-		</div>
-	</div>
-</body>
+                    <li><a href="/ekb/professii-vuzy">Профессии ВУЗов</a></li>
+                    <li>
+                      <a href="/ekb/specialnosti-vuzy">Специальности ВУЗов</a>
+                    </li>
+                    <li><a href="/ekb/programmy-vuzy">Программы ВУЗов</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-submenu">
+                  <a href="/ekb/uchebnye-zavedeniya/ssuzy">Профессиональное</a>
+                  <ul>
+                    <li>
+                      <a href="/ekb/uchebnye-zavedeniya/ssuzy">Все СПО</a>
+                    </li>
+
+                    <li><a href="/ekb/professii-ssuzy">Профессии СПО</a></li>
+                    <li>
+                      <a href="/ekb/specialnosti-ssuzy">Специальности СПО</a>
+                    </li>
+                    <li><a href="/ekb/programmy-ssuzy">Программы СПО</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-submenu">
+                  <a href="#" onclick="return false;">Другое</a>
+                  <ul>
+                    <li><a href="/ekb/novosti">Новости</a></li>
+                    <li><a href="/ekb/statii">Статьи</a></li>
+                  </ul>
+                </li>
+                <li class="d-md-none">
+                  <form method="post" action="/search">
+                    <div class="d-flex">
+                      <input
+                        placeholder="Найти..."
+                        type="text"
+                        value=""
+                        name="search"
+                        required=""
+                      />
+                      <button type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="d-none d-md-block">
+              <a
+                href="#"
+                class="toggle-search"
+                data-toggle="modal"
+                data-target="#searchModal"
+                ><i class="fas fa-search"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breads">
+      <div class="container fs11 text-uppercase">
+        <a href="/ekb">Главная</a>
+        &gt; <a href="/ekb/uchebnye-zavedeniya">Учебные заведения</a> &gt;
+        <a href="/ekb/uchebnye-zavedeniya/vuzy">ВУЗы</a> &gt;
+        <a href="/ekb/uchebnye-zavedeniya/vuzy/universitety">Университеты</a>
+        &gt;
+        <a
+          href="/ekb/vuz/uralskij-federalnyj-universitet-imeni-pervogo-prezidenta-rossii-b-n-elcina"
+          >Уральский федеральный университет имени первого Президента России Б.
+          Н. Ельцина</a
+        >
+        &gt; Программы
+      </div>
+    </div>
+    <div class="сontainer">
+      <h1>Добавьте ваше учебное заведение</h1>
+      <div class="email">
+        <p>Введите ваш емаил:</p>
+        <input type="email" name="email" />
+      </div>
+      <div class="cod">
+        <p>Введите код подтверждения:</p>
+        <input type="text" name="kod" />
+      </div>
+      <div>
+        <input type="submit" value="Отправить код" />
+      </div>
+
+      <h3>
+        Выберите город:
+        <p>
+          <select>
+            <option value="1">Екат</option>
+            <option value="2">Тюмень</option>
+          </select>
+        </p>
+      </h3>
+      <h3>
+        Выберите категорию учебного заведения:
+        <p>
+          <select>
+            <option value="1">Высшее учебное заведение</option>
+            <option value="2">Среднее специальное учебное заведение</option>
+          </select>
+        </p>
+      </h3>
+      <div class="nameuniversity">
+        <p>Введите название учебного заведения:</p>
+        <input type="text" />
+      </div>
+      <div class="obuniversity">
+        <p>Введите описание вашего учебного заведения:</p>
+        <textarea
+          name="university"
+          id="opisanie"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="house">
+        <label for="forhouse">Общежитие:</label>
+        <input type="checkbox" id="forhouse" name="university" value="room" />
+      </div>
+      <div class="gosvo">
+        <label for="forGos">Государственный:</label>
+        <input type="checkbox" id="forGos" name="university" value="study" />
+      </div>
+
+      <div class="freeplace">
+        <label for="forfree">Бюджетные места:</label>
+        <input type="checkbox" id="forfree" name="university" value="place" />
+      </div>
+
+      <div class="militarybox">
+        <label for="formilitary">Военная кафедра:</label
+        ><input
+          type="checkbox"
+          id="formilitary"
+          name="university"
+          value="militaryStudy"
+        />
+      </div>
+      <div class="license">
+        <label for="forlicense">Лицензия:</label
+        ><input
+          type="checkbox"
+          id="forlicense"
+          name="university"
+          value="licenseStudy"
+        />
+      </div>
+      <div class="progstudy">
+        <p>Количество программ обучения:</p>
+        <input type="text" />
+      </div>
+      <div class="freeplaces">
+        <p>Количество бюджетных мест:</p>
+        <input type="text" />
+      </div>
+      <div class="payplaces">
+        <p>Количество платных мест:</p>
+        <input type="text" />
+      </div>
+      <div class="freeball">
+        <p>Проходной балл на бюджет:</p>
+        <input type="text" />
+      </div>
+      <div class="payball">
+        <p>Проходной балл на платное обучение:</p>
+        <input type="text" />
+      </div>
+      <div class="payforstudy">
+        <p>Средняя стоимость обучения в год:</p>
+        <input type="text" />
+      </div>
+
+      <div class="prog-study">
+        <form>
+          <fieldset>
+            <legend>Программы обучения</legend>
+            <p>Наименование программы обучения:</p>
+            <input type="text" />
+
+            <p>Стоимость обучения в год:</p>
+            <input type="text" />
+
+            <p>Проходной балл на бюджетной основе:</p>
+            <input type="text" />
+
+            <p>Количество мест на бюджетной основе:</p>
+            <input type="text" />
+
+            <p>Проходной балл на платной основе:</p>
+            <input type="text" />
+
+            <p>Количество мест на платной основе:</p>
+            <input type="text" />
+
+            <div class="elevenclasses">
+              <label for="eleven">После 11кл:</label
+              ><input
+                type="checkbox"
+                id="eleven"
+                name="university"
+                value="elevenclass"
+              />
+            </div>
+            <div class="nineclasses">
+              <label for="nine">После 9 кл:</label
+              ><input
+                type="checkbox"
+                id="nine"
+                name="university"
+                value="nineclass"
+              />
+            </div>
+            <div class="daystudy">
+              <label for="ochno">Очно:</label
+              ><input
+                type="checkbox"
+                id="ochno"
+                name="university"
+                value="ochnostudy"
+              />
+            </div>
+            <div class="nightstudy">
+              <label for="zaochno">Заочно:</label
+              ><input
+                type="checkbox"
+                id="zaochno"
+                name="university"
+                value="zaochnostudy"
+              />
+            </div>
+            <div class="homestudy">
+              <label for="distance">Дистанционно:</label
+              ><input
+                type="checkbox"
+                id="distance"
+                name="university"
+                value="distancestudy"
+              />
+            </div>
+            <div class="daynigthstudy">
+              <label for="full">Очно/заочно:</label
+              ><input
+                type="checkbox"
+                id="full"
+                name="university"
+                value="fullstudy"
+              />
+            </div>
+
+            <p>ДОБАВИТЬ СТРАНИЦЫ С ПРОГРАММАМИ</p>
+            <p><input type="submit" value="Добавить" /></p>
+          </fieldset>
+          <p><input type="submit" value="Сохранить" /></p>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb20">
+            <p class="text-uppercase bold montserrat fs18 pb5">О нас</p>
+            <div class="fs13">
+              <p>
+                Образовательный портал TimeStudent для абитуриентов и студентов.
+                Каталог учебных заведений, профессий, программ обучения, дни
+                открытых дверей, новости и статьи об образовании.
+              </p>
+            </div>
+            <div class="social-footer">
+              <a href="#" target="_blank" class="mr10"
+                ><i class="fab fa-vk"></i
+              ></a>
+              <a href="#" target="_blank" class="mr10"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="text-uppercase bold montserrat fs18">Меню</p>
+            <div class="fs13">
+              <ul class="bottom-menu list-unstyled">
+                <li><a href="/ekb/professii-vuzy">Профессии ВУЗов</a></li>
+                <li>
+                  <a href="/ekb/specialnosti-vuzy">Специальности ВУЗов</a>
+                </li>
+                <li>
+                  <a href="/ekb/programmy-vuzy">Программы обучения ВУЗов</a>
+                </li>
+                <li><a href="/ekb/professii-ssuzy">Профессии ССУЗов</a></li>
+                <li>
+                  <a href="/ekb/specialnosti-ssuzy">Специальности ССУЗов</a>
+                </li>
+                <li>
+                  <a href="/ekb/programmy-ssuzy">Программы обучения ССУЗов</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="text-uppercase bold montserrat fs18">Страницы</p>
+            <ul class="bottom-menu list-unstyled">
+              <li><a href="/kontakty">Контакты</a></li>
+              <li><a href="/politic">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://test.uralstudent.ru/js/bootstrap.min.js"></script>
+    <script src="https://test.uralstudent.ru/js/jquery.bxslider.js"></script>
+    <script src="https://test.uralstudent.ru/js/jquery.counterup.min.js"></script>
+    <script src="https://test.uralstudent.ru/js/jquery.fancybox.js"></script>
+    <script src="https://test.uralstudent.ru/js/jquery.maskedinput.js"></script>
+    <script src="https://test.uralstudent.ru/js/scripts.js"></script>
+  </body>
 </html>
